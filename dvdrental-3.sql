@@ -7,5 +7,4 @@ select country from country where country like '%n' and length(country) >= 6;
 --film tablosunda bulunan title sütunundaki film isimlerinden en az 4 adet  'T' karakteri içeren film isimlerini sıralayınız.
 select title from film where title ilike '%t%t%t%t%';
 --film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
-select * from film where title like 'C%' and length(title) >= 90 and rental_rate >= 2.99;
---Kolay Gelsin.
+select * from film where title like 'C%' and length(title) > 90 and rental_rate > 2.99;
